@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.CSS Genetator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Generator</h1>
+    <div class="wrapper-flex">
+        <div class="wrapper">
+            <div class="wrapper-top">
+                <div class="top-left-range">
+                    <input 
+                        class="input"
+                        type="range" 
+                        id="tlr"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+                    <div class="result" id="result-tlr">0</div>
+                </div>
+                <div class="top-right-range">
+                    <input 
+                        class="input"   
+                        type="range" 
+                        id="trr"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+                    <div class="result" id="result-trr">0</div>
+                </div>
+            </div>
+            <div class="wrapper-middle">
+                <div id="cube"></div>
+            </div>
+            <div class="wrapper-bottom">
+                <div class="bottom-left-range">
+                    <input 
+                        class="input"
+                        type="range" 
+                        id="blr"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+                    <div class="result" id="result-blr">0</div>
+                </div>
+                <div class="bottom-right-range">
+                    <input
+                        class="input"
+                        type="range"
+                        id="brr"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+                    <div class="result" id="result-brr">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="total-result">
+            <button id="btn">Calculate</button>
+            <span>border-radius: </span><span id="totalResult"></span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
